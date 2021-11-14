@@ -1,0 +1,848 @@
+:root {
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 400 16px 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*  ｀、ヽ(ノ＞＜)ノ ｀、ヽ｀☂ヽ
+        (-(-_(-_-)_-)-) 
+*/
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1462px;
+}
+
+/*          HEADER  
+    (x(x_(x_x(O_o)x_x)_x)x)
+============================== */
+.intro {
+    width: 100%;
+    height: 100vh;
+    padding: 50px 77px 100px;
+
+    background: url(../assets/img/intro/Furie_Elements_01.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.logo img:hover {
+    filter: saturate(900%)
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar li:first-child:before {
+    content: '';
+    width: 32px;
+    height: 32px;
+
+    position: absolute;
+    left: -50px;
+    bottom: -6px;
+
+    background: url(../assets/img/header/mail.png) center no-repeat;
+
+    transition: all .2s linear;
+}
+
+.navbar li:last-child:before {
+    content: '';
+    width: 32px;
+    height: 32px;
+
+    position: absolute;
+    left: -45px;
+    bottom: -6px;
+
+    background: url(../assets/img/header/phone.png);
+    transition: all .2s linear;
+}
+
+.navbar li:hover::before {
+    transform: scale(1.1);
+    filter: grayscale(100%);
+}
+
+.navbar li a {
+    margin-right: 60px;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--white);
+}
+
+.log {
+    padding: 10px 30px;
+
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 16px;
+
+    background-color: #135ec5;
+    border-radius: 30px;
+
+    transition: all .2s linear;
+}
+
+.log:hover {
+    color: #135ec5;
+    background-color: var(--white);
+    box-shadow: 0 0 20px 2px #fff;
+}
+
+.buying {
+    margin: 0 auto;
+    width: 1440px;
+
+    position: absolute;
+    bottom: 40px;
+}
+
+.buying__menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buying__item {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buying__item > div {
+    font-weight: 700;
+    font-size: 50px;
+
+    color: #3c3c3c;
+    cursor: pointer;
+    position: relative;
+
+    transition: all .2s linear;
+}
+
+.buying__item > div:hover {
+    color: #fff;
+}
+
+.buying__item > div::after {
+    content: '';
+    width: 300px;
+    height: 2px;
+
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: #282726;
+
+    transition: all .2s linear;
+}
+
+.buying__item > div:hover::after {
+    background-color: #fff;
+    box-shadow: 0 0 20px 2px #fff;
+}
+
+.buying__link {
+    padding: 10px 20px;
+
+    background-color: #135ec5;
+    border-radius: 30px;
+
+    align-self: center;
+    font-weight: 700;
+    font-size: 14px;
+
+    text-transform: uppercase;
+    color: var(--white);
+
+    transition: all .2s linear;
+}
+
+.buying__link:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 20px 2px #fff;
+}
+
+/* The__best 
+    (ಥ﹏ಥ)
+*/
+.the__best {
+    width: 100%;
+}
+
+.series__title  {
+    margin: 60px 0;
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #c1c1c1;
+}
+
+.car__brand {
+    margin-bottom: 175px;
+    padding-bottom: 60px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-bottom: 1px solid #ebebeb;
+}
+
+.car__logo img {
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.car__logo:hover img {
+    transform: scale(1.2);
+}
+
+.bmw__logo img {
+    border-radius: 100%;
+    border: none;
+}
+
+.bmw__logo:hover img {
+    filter: saturate(300%);
+    box-shadow: 0 0 15px 2px #008ebe;
+}
+
+.bmw__series {
+    margin: 0 auto 140px;
+    width: 1200px;
+    display: flex;
+}
+
+.bmw__text {
+    width: 700px;
+    padding-left: 165px;
+}
+
+.bmw__text h2 {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    color: #135ec5;
+}
+
+.bmw__text p {
+    margin-bottom: 60px;
+    width: 500px;
+
+    font: 400 16px/2 "Open-Sans", sans-serif;
+    color: #c1c1c1;
+}
+
+.bmw__text p:first-child {
+    margin-bottom: 0;
+}
+
+.view__model {
+    padding: 20px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+
+    background-color: #135ec5;
+    border-radius: 50px;
+
+    transition: all .2s linear;
+}
+
+.view__model:hover {
+    color: #135ec5;
+    border-top: 1px solid #135ec5;
+    border-left: 1px solid #135ec5;
+    box-shadow: 5px 5px 0 #135dc58a;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.fas {
+    padding-left: 15px;
+
+    font-size: 40px;
+    color: #135dc565;
+    
+    position: relative;
+    top: 11px;
+}
+
+/* Announcemenr */
+.announcemenr {
+    width: 100%;
+    height: 540px;
+
+    text-align: center;
+    background-color: #135ec5;
+
+    position: relative;
+}
+
+.announcemenr h2 {
+    padding: 145px 0 75px;
+
+    font-weight: 799;
+    font-size: 60px;
+    color: var(--white);
+}
+
+.announcemenr a {
+    padding: 15px 60px;
+
+    border-radius: 30px;
+    border: 2.5px solid var(--white);
+
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+
+    transition: all .2s linear;
+}
+
+.announcemenr a:hover {
+    background-color: #fff;
+    color: #135ec5;
+}
+
+.announcemenr__img {
+    position: absolute;
+    bottom: -140px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+/* Mercedes (⌐■_■)
+    ＜￣｀ヽ、　　　　　　　／ ￣ ＞
+　ゝ、　　＼　／⌒ヽ,ノ 　 /´
+　　　ゝ、 （ ( ͡◉ ͜> ͡◉) ／
+　　 　　>　 　 　,ノ
+　　　　　∠_,,,/    
+*/
+.container {
+    margin: 250px auto 165px;
+    width: 1400px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.mers__mini {
+    width: 500px;
+    height: 565px;
+
+    align-self: center;
+    background-color: #dde1e7;
+    border-radius: 20px;
+}
+
+.mini__head {
+    width: 100%;
+    height: 195px;
+
+    background-color: #135dc3;
+    border-radius: 20px 20px 0 0;
+
+    position: relative;
+}
+
+.mini__head span {
+    text-transform: uppercase;
+    text-align: center;
+
+    font-size: 158px;
+    font-weight: 700;
+
+    color: var(--white);
+    cursor: default;
+    opacity: .1;
+}
+
+.mers__mini__btn {
+    padding: 10px 20px;
+
+    border-radius: 25px;
+    background-color: var(--white);
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    color: #135ec5;
+
+    position: absolute;
+    top: 30px;
+    right: 24px;
+
+    transition: all .2s linear;
+}
+
+.mers__mini__btn:hover {
+    background-color: #ffffff7c;
+    color: var(--white);
+}
+
+.mini__head img {
+    position: absolute;
+    left: 50%;
+    bottom: -73px;
+
+    transform: translateX(-50%);
+}
+
+.suptitle {
+    margin-top: 100px;
+
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subtitle {
+    margin: 10px 0 25px;
+
+    font-weight: 700;
+    font-size: 14px;
+    color: #135ec5;
+    text-align: center;
+}
+
+.mini__body p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #c1c1c1;
+    text-align: center;
+}
+
+.mini__footer {
+    margin: 40px auto 0;
+    width: 350px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 700;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 30px;
+    color: #16ad2c;
+}
+
+.mini__footer a {
+    padding: 15px 40px;
+
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #135ec5;
+
+    background-color: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+    border-radius: 25px;
+
+    transition: all .2s linear;
+}
+
+.mini__footer a:hover {
+    color: #135ec5;
+
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+}
+
+.mers__max {
+    width: 825px;
+    height: 700px;
+
+    display: flex;
+    position: relative;
+
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.mers__info {
+    padding: 60px 45px 95px;
+    flex-basis: 60%;
+
+    background-color: #dde1e7;
+}
+
+.car {
+    flex-basis: 40%;
+    background-color: #135ec4;
+}
+
+.car img {
+    width: 525px;
+
+    position: absolute;
+    top: 155px;
+    right: -100px;
+}
+
+.car span {
+    cursor: default;
+    writing-mode: vertical-rl;
+    
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 220px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: var(--white);
+    opacity: .1;
+}
+
+.max__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.max__header p {
+    font-weight: 700;
+    font-size: 14px;
+    color: #e2e2e2;
+}
+
+.max__body h2 {
+    margin: 115px 0 40px;
+
+    font-weight: 700;
+    font-size: 30px;
+    color: #135ec5;
+}
+
+.max__body p {
+    margin-bottom: 25px;
+    font: 400 16px "Open-Sans", sans-serif;
+    color: #c1c1c1;
+}
+
+.max__body p:last-child {
+    margin-bottom: 80px;
+}
+
+.max__body a {
+    display: inline-block;
+    margin-top: 80px;
+
+    padding: 20px 55px;
+
+    color: #135ec5b5;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94 104 121 / 29%);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 30px;
+
+    transition: all .2s linear;
+}
+
+.max__body a:hover {
+    color: #135dc5da;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+}
+
+/* Choice__car */
+.choice__car {
+    margin: 0 auto 100px;
+    width: 1460px;
+    height: 860px;
+
+    box-shadow: 0 0 10px 2px #ccc;
+}
+
+.box__one {
+    width: 100%;
+    height: 490px;
+    padding: 70px 50px;
+
+    font: 700 18px 'Montserrat', sans-serif;
+    color: #c1c1c1;
+}
+
+.box__menu {
+    margin-bottom: 120px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.box__one .car__brand {
+    padding-top: 40px;
+
+    border-bottom: none;
+    border-top: 1px solid #ebebeb;
+}
+
+.flex {
+    flex: 1 1 0;
+    align-items: center;
+}
+
+.flex span {
+    cursor: pointer;
+    transition: all .2s linear;
+
+    position: relative;
+}
+
+.flex span:hover {
+    color: #000;
+}
+
+.flex span:hover::before {
+    background-color: #000;
+}
+
+.flex span::before {
+    content: '';
+
+    width: 300px;
+    height: 2px;
+
+    background-color: #ebebeb;
+
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+
+    transition: all .2s linear;
+}
+
+.warsaw {
+    color: #000;
+
+    position: relative;
+}
+
+.warsaw .fas {
+    color: #ccc;
+    font-size: 20px;
+
+    position: absolute;
+    top: 0;
+    right: 50px;
+
+    transition: all .2s linear;
+}
+
+.warsaw:hover .fas {
+    color: #000;
+}
+
+.box__two {
+    width: 100%;
+    height: 370px;
+    padding: 70px 50px;
+
+    font: 700 18px 'Montserrat', sans-serif;
+    color: #fff;
+
+    background-color: #135ec5;
+}
+
+.advanced__search {
+    margin-bottom: 80px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advanced__search span {
+    flex: 1 1 0;
+    opacity: .2;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.advanced__search span:first-child {
+    opacity: 1;
+}
+
+.advanced__search span::before {
+    content: '';
+
+    width: 300px;
+    height: 2px;
+
+    background-color: #ebebeb;
+
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+
+    transition: all .2s linear;
+}
+
+.link {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.box__two a {
+    display: inline-block;
+    padding: 15px 35px;
+
+    text-transform: uppercase;
+    color: #135ec5;
+
+    background-color: #fff;
+    border-radius: 30px;
+
+    transition: all .2s linear;
+}
+
+.box__two a:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .buying__item {
+        flex-direction: column;
+    }
+
+    .buying__item > div {
+        margin-bottom: 30px;
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    .buying__link {
+        display: none;
+    }
+
+    li::before {
+        display: none;
+    }
+
+    .bmw__text p {
+        font-weight: 300;
+    }
+
+    .bmw__text {
+        padding-left: 50px;
+    }
+
+    .bmw__img  img {
+        width: 420px;
+        margin-left: 25px;
+    }
+
+    .container {
+        width: 825px;
+        flex-direction: column;
+    }
+
+    .mers__mini {
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .choice__car {
+        width: 920px;
+    }
+
+    .box__menu {
+        /* flex-direction: column;
+        flex: 0 0 0; */
+        display: inline-block;
+       text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .box__menu span {
+        line-height: 2;
+    }
+
+    .box__menu span::before {
+        display: none;
+    }
+
+    .warsaw .fas {
+        display: none;
+    }
+
+    .advanced__search {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advanced__search span {
+        line-height: 1.5;
+    }
+
+    .advanced__search span::before {
+        display: none;
+    }
+
+    .advanced__search {
+        margin-bottom: 40px;
+    }
+
+    .box__two {
+        padding: 0;
+    }
+
+    .link {
+        margin-top: 5px;
+    }
+}
